@@ -1,0 +1,10 @@
+h2{
+    color : orange;
+    font-family: Trebuchet MS;
+    text-align: center;
+}
+body {
+    background: url('img/tree.jpg'), url('img/field2.jpg');
+    background-repeat: no-repeat, repeat;
+    color: white;
+}

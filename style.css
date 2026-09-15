@@ -1,5 +1,65 @@
-h2{
-    color : orange;
-    font-family: Trebuchet MS;
-    text-align: center;
+/* Pengaturan Dasar Halaman */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E8F5E9; /* Warna latar belakang hijau natural (soft) */
+    line-height: 1.65;
+}
+
+/* Pengaturan Flexbox Utama */
+.container-satu {
+    display: flex; /* KUNCI UTAMA: Mengubah container menjadi flexbox */
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff; /* Latar belakang area konten putih */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    gap: 20px; /* Memberi jarak antar kolom */
+}
+
+/* Pengurutan (Order) dan Pewarnaan Item Flex */
+
+.sidebar-satu {
+    order: 1; /* Memaksa Sidebar Satu pindah ke kolom paling kiri */
+    flex: 1; /* Lebar proporsional 1 bagian */
+    background-color: #FFF3E0; /* Warna hangat untuk sidebar kiri */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.kolom-utama {
+    order: 2; /* Menempatkan Artikel Utama di tengah */
+    flex: 2.5; /* Diberi nilai lebih besar agar kolom artikel lebih lebar */
+    padding: 0 10px;
+}
+
+.sidebar-dua {
+    order: 3; /* Menempatkan Sidebar Dua di kolom paling kanan */
+    flex: 1; /* Lebar proporsional 1 bagian */
+    background-color: #E3F2FD; /* Warna sejuk/biru langit untuk sidebar kanan */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Pengaturan Tambahan (Gambar & Link) */
+.gambar-artikel {
+    width: 100%; /* Membuat gambar menyesuaikan lebar kolom */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.sidebar-satu ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.sidebar-satu a {
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: bold;
 }
