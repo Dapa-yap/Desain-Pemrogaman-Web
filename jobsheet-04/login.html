@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Petugas - SIMPUS-Mini</title>
+    <!-- Path CSS untuk file yang ada di luar/root folder -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+    <header>
+        <h1>SIMPUS-Mini</h1>
+    </header>
+
+    <main>
+        <!-- Memakai gaya section card yang sudah ada di style.css -->
+        <section class="login-card">
+            <h2>Login Petugas</h2>
+            
+            <form action="index.html">
+                <div class="form-group">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <!-- Ini <input type="password"> yang diminta di jobsheet -->
+                    <input type="password" id="password" name="password" placeholder="Masukkan password">
+                </div>
+                
+                <div class="form-action">
+                    <!-- Tombol Masuk -->
+                    <button type="submit" class="btn">Masuk</button>
+                </div>
+            </form>
+            
+            <p style="text-align: center; margin-top: 15px;">
+                Belum punya akun? <a href="#">Daftar di sini</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
